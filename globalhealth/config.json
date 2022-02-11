@@ -14,8 +14,8 @@
   },
   "legend": {
     "edgeLabel": "Relationship",
-    "colorLabel": "Modulatity",
-    "nodeLabel": "Term Freqs"
+    "colorLabel": "Modularity",
+    "nodeLabel": "SD Health Node"
   },
   "features": {
     "search": true,
