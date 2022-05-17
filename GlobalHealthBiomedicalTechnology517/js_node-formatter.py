@@ -3,12 +3,12 @@ import json
 with open('data.json') as json_file:
     data = json.load(json_file)
     for dictionaries in data['nodes']:
-        if 'Global Health Disparity Research Cluster ' in dictionaries['label']:
+        if 'Biomedical Technology Research Cluster ' in dictionaries['label']:
             size_ = {'size': 3.0 }
             color_ = { 'color' : 'rgb(153,255,153)' }
             dictionaries.update(size_)
             #dictionaries.update(color_)
-        elif 'Biomedical Technology Research Cluster ' in dictionaries['label']:
+        elif 'Global Health Disparity Research Cluster ' in dictionaries['label']:
             size_ = {'size': 3.0 }
             color_ = { 'color' : 'rgb(153,255,153)' }
             dictionaries.update(size_)
