@@ -22,7 +22,7 @@ for c,dictionary in enumerate(data['edges']):
         color_ = dictionary['color'].split(',')
         color_[1] = '255'
         color = ",".join(color_)
-        color_change = { 'color' : color }
+        color_change = { 'color' : str(color) }
         data['edges'][c].update(color_change)
     #elif dictionary['source'] in list(id_label.keys()) or dictionary['target'] in list(id_label.keys()):
         #color_ = dictionary['color'].split(',')
