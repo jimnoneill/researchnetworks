@@ -43,11 +43,5 @@ for c,dictionary in enumerate(data['nodes']):
             data['nodes'][c].update(size_)
             data['nodes'][c].update(color_change)
 
-for c,dictionary in enumerate(data['edges']):
-    for i in range(len(tokenslist)):
-        if dictionary['source'] in list(id_label.keys()) and dictionary['target'] in list(id_label.keys()):
-            colorstr = str(colors[i])
-            color_change = { 'color' : 'rgb'+colorstr }
-            data['edges'][c].update(color_change)
-    
+
 json.dump(data,open('data.json','w'))
