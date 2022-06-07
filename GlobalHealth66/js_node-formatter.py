@@ -33,6 +33,8 @@ for c,dictionary in enumerate(data['nodes']):
             id_label[dictionary['id']] = dictionary['label']
             colorstr = str(colors[i])
             color_change = { 'color' : 'rgb'+colorstr }
+            size_ = {'size': 1.0 }
+            data['nodes'][c].update(size_)
             data['nodes'][c].update(color_change)
     label_idlist.append(label_id)
     id_labellist.append(id_label)
