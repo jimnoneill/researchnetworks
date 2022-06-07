@@ -22,11 +22,9 @@ for i in range(len(ghdbiomed)):
 data = json.load(open('data.json','r'))
 json.dump(data,open('data.json_bak','w'))
 
-label_idlist = []
-id_labellist = []
+label_id = {}
+id_label = {}
 for c,dictionary in enumerate(data['nodes']):
-    label_id = {}
-    id_label = {}
     for i in range(len(tokenslist)):
         if dictionary['label'] in tokenslist[i]:
             label_id[dictionary['label']] = dictionary['id']
@@ -34,9 +32,22 @@ for c,dictionary in enumerate(data['nodes']):
             colorstr = str(colors[i])
             color_change = { 'color' : 'rgb'+colorstr }
             size_ = {'size': 1.0 }
+            data['nodes'][c].update(color_change)
+        elif 'Global Health Disparity Research Cluster ' + str(i+1)  in dictionary['label']:
+            label_id[dictionary['label']] = dictionary['id']
+            id_label[dictionary['id']] = dictionary['label']
+            colorstr = str(colors[i])
+            color_change = { 'color' : 'rgb'+colorstr }
+            size_ = {'size': 3.0 }
             data['nodes'][c].update(size_)
             data['nodes'][c].update(color_change)
-    label_idlist.append(label_id)
-    id_labellist.append(id_label)
+for c,dictionary in enumerate(data['edges']):
+    for i in range(len(tokenslist)):
+        if dictionary['source'] in list(id_label.keys()) and dictionary['target'] in list(id_label.keys()):
+            colorstr = str(colors[i])
+            color_change = { 'color' : 'rgb'+colorstr }
+            data['edges'][c].update(color_change)
+
+
     
 json.dump(data,open('data.json','w'))
