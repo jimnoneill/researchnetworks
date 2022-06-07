@@ -26,6 +26,7 @@ label_id = {}
 id_label = {}
 for c,dictionary in enumerate(data['nodes']):
     for i in range(len(tokenslist)):
+        g = 'Global Health Disparity Research Cluster ' + str(i+1)
         if dictionary['label'] in tokenslist[i]:
             label_id[dictionary['label']] = dictionary['id']
             id_label[dictionary['id']] = dictionary['label']
@@ -33,7 +34,7 @@ for c,dictionary in enumerate(data['nodes']):
             color_change = { 'color' : 'rgb'+colorstr }
             size_ = {'size': 1.0 }
             data['nodes'][c].update(color_change)
-        elif 'Global Health Disparity Research Cluster ' + str(i+1)  in dictionary['label']:
+        if dictionary['label'] in g:
             label_id[dictionary['label']] = dictionary['id']
             id_label[dictionary['id']] = dictionary['label']
             colorstr = str(colors[i])
