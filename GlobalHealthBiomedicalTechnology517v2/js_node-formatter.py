@@ -6,7 +6,6 @@ with open('data.json') as json_file:
         if 'Biomedical Technology Research Cluster ' in dictionaries['label']:
             size_ = {'size': 3.0 }
             dictionaries.update(size_)
-            #dictionaries.update(color_)
         elif 'Global Health Disparity Research Cluster ' in dictionaries['label']:
             size_ = {'size': 3.0 }
             color_ = { 'color' : 'rgb(153,255,153)' }
