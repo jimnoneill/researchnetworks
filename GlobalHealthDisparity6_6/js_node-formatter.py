@@ -33,7 +33,7 @@ for c,dictionary in enumerate(data['nodes']):
             color_change = { 'color' : 'rgb'+colorstr }
             size_ = {'size': 1.0 }
             data['nodes'][c].update(color_change)
-        elif 'Global Health Disparity Research Cluster' + str(i+1)  in dictionary['label']:
+        elif 'Global Health Disparity Research Cluster ' + str(i+1)  in dictionary['label']:
             label_id[dictionary['label']] = dictionary['id']
             id_label[dictionary['id']] = dictionary['label']
             colorstr = str(colors[i])
