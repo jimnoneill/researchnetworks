@@ -57,13 +57,25 @@ for c,dictionary in enumerate(data['edges']):
 
 #print(edgecolors)
 keys2 = list(edgecolors.keys())
-
+moreedgecolors = {}
 for c,dictionary in enumerate(data['edges']):
     for i in range(len(keys2)):
         if dictionary['target'] in keys2[i]:
+            y = dictionary['source']
             color_change = edgecolors.get(keys2[i])
             #print(color_change)
+            moreedgecolors[y] = color_change
             data['edges'][c].update(color_change)
 
 #print(keys2)
+keys3 = list(moreedgecolors.keys())
+for c,dictionary in enumerate(data['edges']):
+    for i in range(len(keys3)):
+        if dictionary['source'] in keys3[i]:
+            color_change = moreedgecolors.get(keys3[i])
+            #print(color_change)
+            moreedgecolors[y] = color_change
+            data['edges'][c].update(color_change)
+
+            
 json.dump(data,open('data.json','w'))
