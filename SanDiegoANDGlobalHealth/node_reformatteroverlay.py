@@ -17,7 +17,7 @@ id_label = {}
 data = json.load(open('data.json','r'))
 colors  = (102,0,0)
 json.dump(data,open('data.json_bak','w'))
-
+i = range(1,10)
 
 for c,dictionary in enumerate(data['nodes']):
     if dictionary['label'] in ghdbiomed:
@@ -28,7 +28,16 @@ for c,dictionary in enumerate(data['nodes']):
         #color = ",".join(color_)
         colorstr = str(colors)
         color_change = { 'color' : 'rgb'+colorstr }
+        size_ = {'size': 1.0 }
+        data['nodes'][c].update(size_)
         data['nodes'][c].update(color_change)
+    for i in range(10):
+        if 'San Diego Health Disparity Research Cluster ' + str(i+1)  in dictionary['label']:
+            colorstr = str(colors)
+            color_change = { 'color' : 'rgb'+colorstr }
+            size_ = {'size': 3.0 }
+            data['nodes'][c].update(size_)
+            data['nodes'][c].update(color_change)
 for c,dictionary in enumerate(data['edges']):
     if dictionary['source'] in list(id_label.keys()) and dictionary['target'] in list(id_label.keys()):
         print(True)
