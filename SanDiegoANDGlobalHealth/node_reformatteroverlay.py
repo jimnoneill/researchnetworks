@@ -15,7 +15,7 @@ ghdbiomed= pickle.load(open('ListofSDTokensOverlay.pickle','rb'))
 label_id = {}
 id_label = {}
 data = json.load(open('data.json','r'))
-colors  = (102,0,0)
+colors  = (0,255,0)
 json.dump(data,open('data.json_bak','w'))
 i = range(1,10)
 
