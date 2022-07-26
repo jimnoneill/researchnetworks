@@ -45,14 +45,25 @@ for c,dictionary in enumerate(data['nodes']):
 
 
 keys = list(idscolors.keys())
-
+edgecolors = {}
 for c,dictionary in enumerate(data['edges']):
     for i in range(len(keys)):
         if dictionary['id'] in keys[i]:
+            x = dictionary['target']
             color_change = idscolors.get(keys[i])
+            edgecolors[x] = color_change
+           #print(color_change)
+            data['edges'][c].update(color_change)
+
+#print(edgecolors)
+keys2 = list(edgecolors.keys())
+
+for c,dictionary in enumerate(data['edges']):
+    for i in range(len(keys2)):
+        if dictionary['target'] in keys2[i]:
+            color_change = edgecolors.get(keys2[i])
             #print(color_change)
             data['edges'][c].update(color_change)
 
-
-
+#print(keys2)
 json.dump(data,open('data.json','w'))
