@@ -53,16 +53,38 @@ for c,dictionary in enumerate(data['edges']):
     #for i in range(len(keys)):
     s = dictionary['source']
     sources.append(s)
+
+updatedcolors = {}
+for i in sources:
+        for key, values in idscolors.items():
+            if i == key:
+                updatedcolors[i] = idscolors.get(key)
+
+#print(updatedcolors)
+keys = list(updatedcolors.keys())
 for c,dictionary in enumerate(data['edges']):
-    for key, values in idscolors.items():
-        if key in dictionary['source']:
-            colors = idscolors.get(key)
+    for i in range(len(keys)):
+        if dictionary['id'] in keys[i]:
+            color_change = updatedcolors.get(keys[i])
+            data['edges'][c].update(color_change)
+        
+
+"""
+for c,dictionary in enumerate(data['edges']):
+    for i in sources:
+        for key, values in idscolors.items():
+            if i == key:
+                colors = idscolors.get(key)
+                data['edges'][c].update(colors)
+        #print(key)
+        #if key in dictionary['source']:
+            #colors = idscolors.get(key)
             #print(colors)
             #colors = idscolors.values()
             #colors = dict(colors)
             #colorstr = colors.values()
             #print(color_change)
-            data['edges'][c].update(colors)
+            #data['edges'][c].update(colors)
             #print('Hi')
 #print(c)
 #print(dictionary)
@@ -76,6 +98,7 @@ for c,dictionary in enumerate(data['edges']):
             #color_change = idscolors.get(keys[i])
             #print(color_change)
            # data['edges'][c].update(color_change)
+           """
 
 
 json.dump(data,open('data.json','w'))
