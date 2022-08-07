@@ -63,10 +63,9 @@ for i in sources:
 #print(updatedcolors)
 keys = list(updatedcolors.keys())
 for c,dictionary in enumerate(data['edges']):
-    for i in range(len(keys)):
-        if dictionary['id'] in keys[i]:
-            color_change = updatedcolors.get(keys[i])
-            data['edges'][c].update(color_change)
+    if dictionary['source'] in keys[c]:
+        color_change = updatedcolors.get(keys[c])
+        data['edges'][c].update(color_change)
         
 
 """
