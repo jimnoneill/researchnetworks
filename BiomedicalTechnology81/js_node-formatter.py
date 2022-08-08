@@ -37,22 +37,72 @@ for c,dictionary in enumerate(data['nodes']):
             data['nodes'][c].update(color_change)
             #print(color_change)
         elif 'Biomedical Technology Research Cluster ' + str(i+1)  in dictionary['label']:
+            idf = dictionary['id']
             colorstr = str(colors[i])
             color_change = { 'color' : 'rgb'+colorstr }
+            #print(type(color_change))
             size_ = {'size': 3.0 }
+            idscolors[idf] = color_change
             data['nodes'][c].update(size_)
             data['nodes'][c].update(color_change)
+#print(idscolors)
 
+#keys = list(idscolors.keys())
+sources  = []
+for c,dictionary in enumerate(data['edges']):
+    #print(c)
+    #for i in range(len(keys)):
+    s = dictionary['source']
+    sources.append(s)
 
-keys = list(idscolors.keys())
+updatedcolors = {}
+for i in sources:
+    for key, values in idscolors.items():
+        if i == key:
+            updatedcolors[i] = idscolors.get(key)
 
+#print(updatedcolors)
+keys = list(updatedcolors.keys())
 for c,dictionary in enumerate(data['edges']):
     for i in range(len(keys)):
-        if dictionary['id'] in keys[i]:
-            color_change = idscolors.get(keys[i])
-            #print(color_change)
-            data['edges'][c].update(color_change)
+        if dictionary['source'] in keys[i]:
+            color_change = updatedcolors.get(keys[i])
+            data['edges'][i].update(color_change)
+            
 
+"""
+for c,dictionary in enumerate(data['edges']):
+    for i in sources:
+        for key, values in idscolors.items():
+            if i == key:
+                colors = idscolors.get(key)
+                data['edges'][c].update(colors)
+        #print(key)
+        #if key in dictionary['source']:
+            #colors = idscolors.get(key)
+            #print(colors)
+            #colors = idscolors.values()
+            #colors = dict(colors)
+            #colorstr = colors.values()
+            #print(color_change)
+            #data['edges'][c].update(colors)
+            #print('Hi')
+#print(c)
+#print(dictionary)
+#print(type(color_change))
+    #for i in sources:
+     #   if i in idscolors:
+      #      pass
+            #print('The key exists')
+#print(sources)
+        #if dictionary['source'] in keys[i]:
+            #color_change = idscolors.get(keys[i])
+            #print(color_change)
+           # data['edges'][c].update(color_change)
+           """
+
+
+json.dump(data,open('data.json','w'))
 
 
 json.dump(data,open('data.json','w'))
