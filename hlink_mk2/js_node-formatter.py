@@ -29,24 +29,27 @@ for c,dictionary in enumerate(data['nodes']):
     if dictionary['label'].startswith('Global Health'):
         #print(dictionary)
         idf = dictionary['id']
-        colorstr = str(colors[i])
+        colorstr = str(colors[c])
         color_change = 'rgb'+colorstr
         #print(type(color_change))
         size_ = {'size': 3.0 }
         idscolors[idf] = color_change
         data['nodes'][c]['size'] = 3.0
         data['nodes'][c]['color'] = color_change
-    else:
-        for i in range(len(tokenslist)):
-            if dictionary['label'] in tokenslist[i]:
-                idf = dictionary['id']
-                colorstr = str(colors[i])
-                color_change = 'rgb'+str(colorstr)
-                size_ = {'size': 1.0 }
-                idscolors[idf] = color_change
-                data['nodes'][c]['size'] = 1.0
-                data['nodes'][c]['color'] =color_change
-                #print(color_change)
+###FIX make dictionary of 'label': ids ~ if "target" or "source" in idscolors.keys()
+for i in range(len(tokenslist)):
+    
+    
+    if dictionary['label'] in tokenslist[i]:
+        #FIX look up all connections~ if "target" or "source" in idscolors.keys()
+            idf = dictionary['id']
+            #colorstr = str(colors[i])
+            color_change = 'rgb'+str(colorstr)
+            size_ = {'size': 1.0 }
+            #idscolors[idf] = color_change
+            data['nodes'][c]['size'] = 1.0
+            data['nodes'][c]['color'] =color_change
+            #print(color_change)
 
 
 
