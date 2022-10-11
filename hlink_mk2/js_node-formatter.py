@@ -26,6 +26,15 @@ json.dump(data,open('data.json_bak','w'))
 
 idscolors = {} 
 for c,dictionary in enumerate(data['nodes']):
+    if dictionary['label'].startswith('Global Health'):
+        idf = dictionary['id']
+        colorstr = str(colors[i])
+        color_change = { 'color' : 'rgb'+colorstr }
+        #print(type(color_change))
+        size_ = {'size': 3.0 }
+        idscolors[idf] = color_change
+        data['nodes'][c].update(size_)
+        data['nodes'][c].update(color_change)
     for i in range(len(tokenslist)):
         if dictionary['label'] in tokenslist[i]:
             idf = dictionary['id']
@@ -36,15 +45,7 @@ for c,dictionary in enumerate(data['nodes']):
             data['nodes'][c].update(size_)
             data['nodes'][c].update(color_change)
             #print(color_change)
-        elif dictionary['label'].startswith('Global Health'):
-            idf = dictionary['id']
-            colorstr = str(colors[i])
-            color_change = { 'color' : 'rgb'+colorstr }
-            #print(type(color_change))
-            size_ = {'size': 3.0 }
-            idscolors[idf] = color_change
-            data['nodes'][c].update(size_)
-            data['nodes'][c].update(color_change)
+
 
 
 #keys = list(idscolors.keys())

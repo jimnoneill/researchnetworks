@@ -19,7 +19,13 @@ colors  = (102,0,0)
 json.dump(data,open('data.json_bak','w'))
 
 for c,dictionary in enumerate(data['nodes']):
-    if dictionary['label'] in hlink_tokens:
+    if dictionary['label'].startswith('HLINK'):
+        colorstr = str(colors)
+        color_change = { 'color' : 'rgb'+colorstr }
+        size_ = {'size': 3.0 }
+        data['nodes'][c].update(size_)
+        data['nodes'][c].update(color_change)
+    elif dictionary['label'] in hlink_tokens:
         label_id[dictionary['label']] = dictionary['id']
         id_label[dictionary['id']] = dictionary['label']
         #color_ = dictionary['color'].split(',')
@@ -28,12 +34,6 @@ for c,dictionary in enumerate(data['nodes']):
         colorstr = str(colors)
         color_change = { 'color' : 'rgb'+colorstr }
         size_ = {'size': 1.0 }
-        data['nodes'][c].update(size_)
-        data['nodes'][c].update(color_change)
-    elif dictionary['label'].startswith('HLINK'):
-        colorstr = str(colors)
-        color_change = { 'color' : 'rgb'+colorstr }
-        size_ = {'size': 3.0 }
         data['nodes'][c].update(size_)
         data['nodes'][c].update(color_change)
 
