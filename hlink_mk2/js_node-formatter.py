@@ -22,29 +22,31 @@ tokenslist = ghd_tokens##[]
     #tokenslist.append(tokens)
 
 data = json.load(open('data.json','r'))
-json.dump(data,open('data.json_bak','w'))
+#json.dump(data,open('data.json_bak','w'))
 
 idscolors = {} 
 for c,dictionary in enumerate(data['nodes']):
     if dictionary['label'].startswith('Global Health'):
+        print(dictionary)
         idf = dictionary['id']
         colorstr = str(colors[i])
-        color_change = { 'color' : 'rgb'+colorstr }
+        color_change = 'rgb'+colorstr
         #print(type(color_change))
         size_ = {'size': 3.0 }
         idscolors[idf] = color_change
-        data['nodes'][c].update(size_)
-        data['nodes'][c].update(color_change)
-    for i in range(len(tokenslist)):
-        if dictionary['label'] in tokenslist[i]:
-            idf = dictionary['id']
-            colorstr = str(colors[i])
-            color_change = { 'color' : 'rgb'+colorstr }
-            size_ = {'size': 1.0 }
-            idscolors[idf] = color_change
-            data['nodes'][c].update(size_)
-            data['nodes'][c].update(color_change)
-            #print(color_change)
+        data['nodes'][c]['size'] = 3.0
+        data['nodes'][c]['color'] = color_change
+    else:
+        for i in range(len(tokenslist)):
+            if dictionary['label'] in tokenslist[i]:
+                idf = dictionary['id']
+                colorstr = str(colors[i])
+                color_change = 'rgb'+colorstr
+                size_ = {'size': 1.0 }
+                idscolors[idf] = color_change
+                data['nodes'][c]['size'] = 1.0
+                data['nodes'][c]['color'] =color_change
+                #print(color_change)
 
 
 
@@ -70,18 +72,9 @@ for c,dictionary in enumerate(data['edges']):
     for i in range(len(keys)):
         if dictionary['source'] in keys[i]:
             color_change = updatedcolors.get(keys[i])
-            data['edges'][i].update(color_change)
+            data['edges'][i]['color'] = color_change
             
 
 
 
-"""
-for c,dictionary in enumerate(data['edges']):
-    for i in range(len(keys)):
-        if dictionary['id'] in keys[i]:
-            color_change = idscolors.get(keys[i])
-            #print(color_change)
-            data['edges'][c].update(color_change)
-
-"""
-json.dump(data,open('data.json','w'))
+json.dump(data,open('/home/jimnoneill/projects/NLP_topic_modeling/topicmodel_networks/researchnetworks/hlink_mk2/data.json','w'))
