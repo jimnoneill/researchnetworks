@@ -8,43 +8,47 @@ import random
 
 
 data = json.load(open('data.json','r'))
-json.dump(data,open('data.json_bak','w'))
-
-#ghdbiomed= pickle.load(open('ListofGlobalHealthTokensOverlay.pickle','rb')) 
-hlink_tokens = pickle.load(open('/home/jimnoneill/HLINK_top_tokens.pickle','rb'))
-label_id = {}
-id_label = {}
-data = json.load(open('data.json','r'))
-colors  = (102,0,0)
 #json.dump(data,open('data.json_bak','w'))
 
+#ghdbiomed= pickle.load(open('ListofGlobalHealthTokensOverlay.pickle','rb')) 
+tokenslist = pickle.load(open('/home/jimnoneill/HLINK_top_tokens.pickle','rb'))
+
+colors  = (102,0,0)
+#json.dump(data,open('data.json_bak','w'))
+idscolors = {}
 for c,dictionary in enumerate(data['nodes']):
     if dictionary['label'].startswith('HLINK'):
-        print(True)
+        #print(True)
         colorstr = str(colors)
         color_change = 'rgb'+colorstr
         size_ = {'size': 3.0 }
         data['nodes'][c]['size'] = 3.0
         data['nodes'][c]['color'] = color_change
-    elif dictionary['label'] in hlink_tokens:
-        #print(True)
-        label_id[dictionary['label']] = dictionary['id']
-        id_label[dictionary['id']] = dictionary['label']
-        #color_ = dictionary['color'].split(',')
-        #color_[1] = '255'
-        #color = ",".join(color_)
-        colorstr = str(colors)
-        color_change = 'rgb'+colorstr
-        size_ = {'size': 1.0 }
-        data['nodes'][c]['size'] = 1.0
-        data['nodes'][c]['color'] = color_change
+        idscolors[idf] = color_change
+    else:
+        for i in range(len(tokenslist)):
+            if dictionary['label'] in tokenslist[i]:
+                idf = dictionary['id']
+                colorstr = str(colors)
+                color_change = 'rgb'+colorstr
+                size_ = {'size': 1.0 }
+                idscolors[idf] = color_change
+                data['nodes'][c]['size'] = 1.0
+                data['nodes'][c]['color'] =color_change
+                #print(color_change)
 
+
+
+#keys = list(idscolors.keys())
+
+#keys = list(idscolors.keys())
 sources  = []
 for c,dictionary in enumerate(data['edges']):
     #print(c)
     #for i in range(len(keys)):
-    s = dictionary['source']
-    sources.append(s)
+    if sources in list(idscolors.keys()):
+        s = dictionary['source']
+        sources.append(s)
 
 updatedcolors = {}
 for i in sources:

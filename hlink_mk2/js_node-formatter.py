@@ -27,7 +27,7 @@ data = json.load(open('data.json','r'))
 idscolors = {} 
 for c,dictionary in enumerate(data['nodes']):
     if dictionary['label'].startswith('Global Health'):
-        print(dictionary)
+        #print(dictionary)
         idf = dictionary['id']
         colorstr = str(colors[i])
         color_change = 'rgb'+colorstr
@@ -41,7 +41,7 @@ for c,dictionary in enumerate(data['nodes']):
             if dictionary['label'] in tokenslist[i]:
                 idf = dictionary['id']
                 colorstr = str(colors[i])
-                color_change = 'rgb'+colorstr
+                color_change = 'rgb'+str(colorstr)
                 size_ = {'size': 1.0 }
                 idscolors[idf] = color_change
                 data['nodes'][c]['size'] = 1.0
