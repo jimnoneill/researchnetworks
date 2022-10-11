@@ -32,7 +32,7 @@ for c,dictionary in enumerate(data['nodes']):
                 colorstr = str(colors)
                 color_change = 'rgb'+colorstr
                 size_ = {'size': 1.0 }
-                idscolors[idf] = color_change
+                #idscolors[idf] = color_change
                 data['nodes'][c]['size'] = 1.0
                 data['nodes'][c]['color'] =color_change
                 #print(color_change)
