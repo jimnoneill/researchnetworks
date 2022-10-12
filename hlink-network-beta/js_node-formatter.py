@@ -136,4 +136,4 @@ for c,dictionary in enumerate(data['edges']):
 
 
 
-json.dump(data,open('/home/jimnoneill/projects/NLP_topic_modeling/topicmodel_networks/researchnetworks/hlink_mk2/data.json','w'))
+json.dump(data,open('/home/jimnoneill/projects/NLP_topic_modeling/topicmodel_networks/researchnetworks/hlink-network-beta/data.json','w'))
