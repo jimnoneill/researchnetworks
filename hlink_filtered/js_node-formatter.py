@@ -12,7 +12,7 @@ hlink_tokens = pickle.load(open('/home/jimnoneill/HLINK_top_tokens.pickle','rb')
 group_top_sd_tokens,group_top_hd_tokens = pickle.load(open('/home/jimnoneill/group_top_sd_tokens,group_top_hd_tokens.pickle','rb'))
 ghd_tokens = pickle.load(open('/home/jimnoneill/ghd_top_tokens.pickle','rb'))
 overlap_tokens = list(set(ghd_tokens).intersection(set(hlink_tokens)))
-colors = pickle.load(open('/home/jimnoneill/rgb_colors_large.pickle','rb'))
+colors = pickle.load(open('/home/jimnoneill/RGBColors.pickle','rb'))#'/home/jimnoneill/rgb_colors_large.pickle','rb'))
 random.shuffle(colors)
 
 tokenslist = ghd_tokens##[]
@@ -36,9 +36,9 @@ for c,dictionary in enumerate(data['nodes']):
         colorstr = str(colors[color_index])
         color_change = 'rgb'+colorstr
         #print(type(color_change))
-        size_ = {'size': 2.0 }
+        size_ = {'size': 2.5 }
         idscolors[idf] = color_change
-        data['nodes'][c]['size'] = 2.0
+        data['nodes'][c]['size'] = 2.5
         data['nodes'][c]['color'] = color_change
         cluster_colors[cluster] = color_change
         color_index += 1
@@ -82,9 +82,9 @@ for c,dictionary in enumerate(data['nodes']):
         colorstr = '(102,0,0)'#str(colors[color_index])
         color_change = 'rgb'+colorstr
         #print(type(color_change))
-        size_ = {'size': 2.0 }
+        size_ = {'size': 2.5 }
         idscolors[idf] = color_change
-        data['nodes'][c]['size'] = 2.0
+        data['nodes'][c]['size'] = 2.5
         data['nodes'][c]['color'] = color_change
         cluster_colors[cluster] = color_change
         #color_index += 1
