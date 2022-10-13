@@ -35,8 +35,8 @@ for c,dictionary in enumerate(data['nodes']):
         idf = dictionary['id']
         colorstr = str(colors[color_index])
         color_change = 'rgb'+colorstr
-        og_color = og_color.replace('rgb(','').split(',')
-        og_color[0] == 'rgb(102'
+        og_color = color_change.replace('rgb(','').split(',')
+        og_color[0] == 'rgb(0'
         color_change = ','.join(og_color)
         #print(type(color_change))
         size_ = {'size': 2.0 }
