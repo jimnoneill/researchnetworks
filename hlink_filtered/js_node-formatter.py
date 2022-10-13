@@ -35,10 +35,13 @@ for c,dictionary in enumerate(data['nodes']):
         idf = dictionary['id']
         colorstr = str(colors[color_index])
         color_change = 'rgb'+colorstr
+        og_color = og_color.replace('rgb(','').split(',')
+        og_color[0] == 'rgb(102'
+        color_change = ','.join(og_color)
         #print(type(color_change))
-        size_ = {'size': 3.0 }
+        size_ = {'size': 2.0 }
         idscolors[idf] = color_change
-        data['nodes'][c]['size'] = 3.0
+        data['nodes'][c]['size'] = 2.0
         data['nodes'][c]['color'] = color_change
         cluster_colors[cluster] = color_change
         color_index += 1
@@ -82,9 +85,9 @@ for c,dictionary in enumerate(data['nodes']):
         colorstr = '(102,0,0)'#str(colors[color_index])
         color_change = 'rgb'+colorstr
         #print(type(color_change))
-        size_ = {'size': 3.0 }
+        size_ = {'size': 2.0 }
         idscolors[idf] = color_change
-        data['nodes'][c]['size'] = 3.0
+        data['nodes'][c]['size'] = 2.0
         data['nodes'][c]['color'] = color_change
         cluster_colors[cluster] = color_change
         #color_index += 1
