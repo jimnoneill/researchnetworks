@@ -33,19 +33,12 @@ for c,dictionary in enumerate(data['nodes']):
         cluster = int(dictionary['label'][-2:].strip())
         #print(dictionary)
         idf = dictionary['id']
-        colorstr_ = str(colors[color_index])
-        color_change_ = 'rgb'+colorstr_
-        
+        colorstr = str(colors[color_index])
+        color_change = 'rgb'+colorstr
         #print(type(color_change))
         size_ = {'size': 2.0 }
-        idscolors[idf] = color_change_
-        
-        
-        color_change_ = color_change_.replace('rgb(','').split(',')
-        color_change_[0] == 'rgb(0'
-        color_change_ = ','.join(color_change_)        
+        idscolors[idf] = color_change
         data['nodes'][c]['size'] = 2.0
-        
         data['nodes'][c]['color'] = color_change
         cluster_colors[cluster] = color_change
         color_index += 1
@@ -64,7 +57,6 @@ for n,group in enumerate(group_top_hd_tokens):
             #print(type(color_change))
             size_ = {'size': 1.0 }
             idscolors[idf] = color_change
-            
             data['nodes'][c]['size'] = 1.0
             data['nodes'][c]['color'] = color_change
             #color_index += 1
