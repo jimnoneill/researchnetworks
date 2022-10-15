@@ -40,11 +40,11 @@ for c,dictionary in enumerate(data['edges']):
             print(data['edges'][c]['size'])
         else:
             continue
-#for c,dictionary in enumerate(data['edges']):
-    #for i in range(len(keys)):
-        #if dictionary['target'] in keys[i]:
+for c,dictionary in enumerate(data['edges']):
+    for i in range(len(keys)):
+        if dictionary['target'] in keys[i]:
             #size_update = data['edges'][c]['size']*25
-            #data['edges'][c]['size'] = size_update
-        #else:
-            #continue            
+            data['edges'][c]['size'] = 10.0#size_update
+        else:
+            continue            
 json.dump(data,open('data.json','w'))
