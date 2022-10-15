@@ -31,22 +31,23 @@ for c,dictionary in enumerate(data['nodes']):
 
 #print(updatedcolors)
 keys = list(id_label.keys())
+for c,dictionary in enumerate(data['edges']):
+    for i in range(len(keys)):
+        if dictionary['source'] in keys[i]:
+            print(True)
+            ###size_update = data['edges'][c]['size']*25
+            data['edges'][c]['size'] = 10.0
+            print(data['edges'][c]['size'])
+        else:
+            data['edges'][c]['size'] = 1.0
+            print(data['edges'][c]['size'])
 #for c,dictionary in enumerate(data['edges']):
     #for i in range(len(keys)):
-        #if dictionary['source'] in keys[i]:
+        #if dictionary['target'] not in keys[i]:
             #print(True)
             ##size_update = data['edges'][c]['size']*25
             #data['edges'][c]['size'] = 10.0
             #print(data['edges'][c]['size'])
         #else:
-            #continue
-for c,dictionary in enumerate(data['edges']):
-    for i in range(len(keys)):
-        if dictionary['target'] not in keys[i]:
-            print(True)
-            #size_update = data['edges'][c]['size']*25
-            data['edges'][c]['size'] = 10.0
-            print(data['edges'][c]['size'])
-        else:
-            continue            
+            #continue            
 json.dump(data,open('data.json','w'))
