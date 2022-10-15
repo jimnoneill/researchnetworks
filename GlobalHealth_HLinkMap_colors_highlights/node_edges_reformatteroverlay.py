@@ -30,7 +30,7 @@ for c,dictionary in enumerate(data['nodes']):
 
 
 #print(updatedcolors)
-#keys = list(id_label.keys())
+keys = list(id_label.keys())
 #for c,dictionary in enumerate(data['edges']):
     #for i in range(len(keys)):
         #if dictionary['source'] in keys[i]:
@@ -42,7 +42,7 @@ for c,dictionary in enumerate(data['nodes']):
             #continue
 for c,dictionary in enumerate(data['edges']):
     for i in range(len(keys)):
-        if dictionary['target'] in keys[i]:
+        if dictionary['target'] not in keys[i]:
             print(True)
             #size_update = data['edges'][c]['size']*25
             data['edges'][c]['size'] = 10.0
