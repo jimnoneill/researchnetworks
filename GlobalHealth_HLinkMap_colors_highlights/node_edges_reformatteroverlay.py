@@ -34,9 +34,15 @@ keys = list(id_label.keys())
 for c,dictionary in enumerate(data['edges']):
     for i in range(len(keys)):
         if dictionary['source'] in keys[i]:
-            size_update = data['edges'][i]['size']*5
-            data['edges'][c]['size'] = size_update
+            #size_update = data['edges'][c]['size']*25
+            data['edges'][c]['size'] = 1.5
         else:
             continue
-            
+#for c,dictionary in enumerate(data['edges']):
+    #for i in range(len(keys)):
+        #if dictionary['target'] in keys[i]:
+            #size_update = data['edges'][c]['size']*25
+            #data['edges'][c]['size'] = size_update
+        #else:
+            #continue            
 json.dump(data,open('data.json','w'))
