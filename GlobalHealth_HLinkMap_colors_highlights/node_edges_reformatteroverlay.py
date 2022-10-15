@@ -15,7 +15,7 @@ ghdbiomed= pickle.load(open('ListofGlobalHealthTokensOverlay.pickle','rb'))
 label_id = {}
 id_label = {}
 data = json.load(open('data.json','r'))
-colors  = (0,0,188)
+
 json.dump(data,open('data.json_bak','w'))
 i = range(1,10)
 
@@ -35,6 +35,8 @@ for c,dictionary in enumerate(data['edges']):
     for i in range(len(keys)):
         if dictionary['source'] in keys[i]:
             size_update = data['edges'][i]['size']*5
-            data['edges'][i]['size'] = size_update
+            data['edges'][c]['size'] = size_update
+        else:
+            continue
             
 json.dump(data,open('data.json','w'))
