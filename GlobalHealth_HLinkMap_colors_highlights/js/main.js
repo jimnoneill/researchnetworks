@@ -70,7 +70,7 @@ function initSigma(config) {
         minNodeSize: 1,
         maxNodeSize: 7,
         minEdgeSize: 0.2,
-        maxEdgeSize: 0.5
+        maxEdgeSize: 10.0
     	};
 	
 	if (config.sigma && config.sigma.mouseProperties) 
