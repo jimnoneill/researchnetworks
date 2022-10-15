@@ -36,7 +36,8 @@ for c,dictionary in enumerate(data['edges']):
         if dictionary['source'] in keys[i]:
             print(True)
             #size_update = data['edges'][c]['size']*25
-            data['edges'][c]['size'] = 5.0
+            data['edges'][c]['size'] = 10.0
+            print(data['edges'][c]['size'])
         else:
             continue
 #for c,dictionary in enumerate(data['edges']):
