@@ -34,8 +34,9 @@ keys = list(id_label.keys())
 for c,dictionary in enumerate(data['edges']):
     for i in range(len(keys)):
         if dictionary['source'] in keys[i]:
+            print(True)
             #size_update = data['edges'][c]['size']*25
-            data['edges'][c]['size'] = 1.5
+            data['edges'][c]['size'] = 5.0
         else:
             continue
 #for c,dictionary in enumerate(data['edges']):
