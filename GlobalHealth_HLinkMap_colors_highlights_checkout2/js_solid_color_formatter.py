@@ -10,7 +10,7 @@ import random
 data = json.load(open('data.json','r'))
 json.dump(data,open('data.json_bak','w'))
 
-ghdbiomed= pickle.load(open('ListofGlobalHealthTokensOverlay.pickle','rb')) 
+hlink= pickle.load(open('hlinktokens.pickle','rb'))
 
 label_id = {}
 id_label = {}
@@ -20,12 +20,10 @@ json.dump(data,open('data.json_bak','w'))
 i = range(1,10)
 
 for c,dictionary in enumerate(data['nodes']):
-    if dictionary['label'] in ghdbiomed:
+    if dictionary['label'] in hlink:
         label_id[dictionary['label']] = dictionary['id']
         id_label[dictionary['id']] = dictionary['label']
-        #color_ = dictionary['color'].split(',')
-        #color_[1] = '255'
-        #color = ",".join(color_)
+
         colorstr = str(colors)
         color_change = { 'color' : 'rgb'+colorstr }
         size_ = {'size': 1.0 }
