@@ -10,7 +10,7 @@ def flatten_once(xss):
     return [x for xs in xss for x in xs]
 data_meta,data_meta2,clusters,clusters2,tokens,tokens2,tokens_pmid,tokens_pmid2,overlay_matrices = pickle.load(open('/home/joneill/researchnetworks/HLINKvsSDHD/data_meta,data_meta2,clusters,clusters2,tokens,tokens2,tokens_pmid,tokens_pmid2,overlay_matrices','rb'))
 #hlink= pickle.load(open('hlinktokens.pickle','rb'))
-tokenslist = [flatten_once(l) for l in tokens2]
+tokenslist = [list(set(flatten_once(l))) for l in tokens2]
 ghdbiomed = tokenslist
 #ghdbiomed= pickle.load(open('GHTokens.pickle','rb'))
 #colors = [(128,0,0),(165,42,42),(255,0,0),(255,215,0),(238,232,170),(255,255,0),(154,205,50),(127,255,0),(0,128,0),(143,188,143),(102,205,170),(47,79,79),(0,128,128),(0,255,255),(224,255,255),(64,224,208),(127,255,212),(70,130,180),(100,149,237),(0,191,255),(30,144,255),(135,206,250),(0,0,128),(0,0,255),(138,43,226),(75,0,130),(123,104,238),(139,0,139),(148,0,211),(186,85,211),(221,160,221),(238,130,238),(255,0,255),(199,21,133),(255,20,147),(255,192,203),(255,228,196),(139,69,19),(244,164,96),(188,143,143),(255,240,245),(245,255,250),(112,128,144),(240,255,240)]
