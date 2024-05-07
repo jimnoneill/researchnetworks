@@ -17,16 +17,16 @@ id_label = {}
 data = json.load(open('data.json','r'))
 
 json.dump(data,open('data.json_bak','w'))
-#i = range(1,10)
-#for c,dictionary in enumerate(data['nodes']):
-    #if dictionary['label'] in hlink:
-        #label_id[dictionary['label']] = dictionary['id']
-        #id_label[dictionary['id']] = dictionary['label']
+i = range(len(hlink)
+for c,dictionary in enumerate(data['nodes']):
+    if dictionary['label'] in hlink:
+        label_id[dictionary['label']] = dictionary['id']
+        id_label[dictionary['id']] = dictionary['label']
 
-    #for i in range(10):
-        #if 'HLINK ' + str(i+1)  in dictionary['label']:
-            #label_id[dictionary['label']] = dictionary['id']
-            #id_label[dictionary['id']] = dictionary['label']
+    for i in range(10):
+        if 'HLINK ' + str(i+1)  in dictionary['label']:
+            label_id[dictionary['label']] = dictionary['id']
+            id_label[dictionary['id']] = dictionary['label']
 
 
 keys = list(id_label.keys())
