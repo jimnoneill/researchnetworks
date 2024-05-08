@@ -11,7 +11,7 @@ def flatten_once(xss):
 
 data = json.load(open('data.json','r'))
 json.dump(data,open('data.json_bak','w'))
-data_meta,data_meta2,clusters,clusters2,tokens,tokens2,tokens_pmid,tokens_pmid2,overlay_matrices = pickle.load(open('/home/joneill/researchnetworks/HLINKvsSDHD6/data_meta,data_meta2,clusters,clusters2,tokens,tokens2,tokens_pmid,tokens_pmid2,overlay_matrices','rb'))
+data_meta,data_meta2,clusters,clusters2,tokens,tokens2,tokens_pmid,tokens_pmid2,overlay_matrices = pickle.load(open('/home/joneill/researchnetworks/HLINKvsSDHD7/data_meta,data_meta2,clusters,clusters2,tokens,tokens2,tokens_pmid,tokens_pmid2,overlay_matrices','rb'))
 #hlink= pickle.load(open('hlinktokens.pickle','rb'))
 hlink = list(set(flatten_once([list(set(flatten_once(l))) for l in tokens])))
 
