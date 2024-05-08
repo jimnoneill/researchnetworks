@@ -8,7 +8,7 @@ import random
 def flatten_once(xss):
     "Converts the list of lists into one list"
     return [x for xs in xss for x in xs]
-data_meta,data_meta2,clusters,clusters2,tokens,tokens2,tokens_pmid,tokens_pmid2,overlay_matrices = pickle.load(open('/home/joneill/researchnetworks/HLINKvsSDHD6/data_meta,data_meta2,clusters,clusters2,tokens,tokens2,tokens_pmid,tokens_pmid2,overlay_matrices','rb'))
+data_meta,data_meta2,clusters,clusters2,tokens,tokens2,tokens_pmid,tokens_pmid2,overlay_matrices = pickle.load(open('/home/joneill/researchnetworks/HLINKvsSDHD7/data_meta,data_meta2,clusters,clusters2,tokens,tokens2,tokens_pmid,tokens_pmid2,overlay_matrices','rb'))
 #hlink= pickle.load(open('hlinktokens.pickle','rb'))
 tokenslist = [list(set(flatten_once(l))) for l in tokens2]
 ghdbiomed = tokenslist
