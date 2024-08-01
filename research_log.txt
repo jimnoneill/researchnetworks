@@ -1,0 +1,505 @@
+commit 0484e539b735ad4af653eb033834f1524109dc3d
+Author: joneill <jnoneill@ucdavis.edu>
+Date:   Thu Aug 1 14:51:22 2024 -0700
+
+    Re-add HTML files for LFS tracking
+
+commit 2aceaa0e3427362233f3f15c86221b330ab06fed
+Author: joneill <jnoneill@ucdavis.edu>
+Date:   Thu Aug 1 14:47:21 2024 -0700
+
+    HLINK Pub maps 7-24
+
+commit c324d6c1768a088a56dac93a0d1fb1425b7bf862
+Author: joneill <jnoneill@ucdavis.edu>
+Date:   Thu Jul 11 15:14:44 2024 -0700
+
+    publish music on health map
+
+commit 8342cb6d495a7a7185c6c8d6e64d3e8dc563a121
+Author: joneill <jnoneill@ucdavis.edu>
+Date:   Wed May 8 11:14:07 2024 -0700
+
+    attempt 7
+
+commit 84d973553db4742d5889401a34bd1df8fc2292a7
+Author: joneill <jnoneill@ucdavis.edu>
+Date:   Wed May 8 09:56:44 2024 -0700
+
+    overlay test run 6
+
+commit 757a75d678991d871358da65350cc6e09aabac8f
+Author: joneill <jnoneill@ucdavis.edu>
+Date:   Tue May 7 19:39:58 2024 -0700
+
+    fix pronouns
+
+commit 84ccb196475e92167acd5bc31011a30a0c49525d
+Author: joneill <jnoneill@ucdavis.edu>
+Date:   Tue May 7 17:55:15 2024 -0700
+
+    tweak minor tokens
+
+commit 36a65a6897a043e7273ff2015261f8d160c89676
+Author: joneill <jnoneill@ucdavis.edu>
+Date:   Tue May 7 17:16:58 2024 -0700
+
+    fix node mixing
+
+commit 8f4b5e2c18ed9136e2273fa514ad2a4967b75f8c
+Author: joneill <jnoneill@ucdavis.edu>
+Date:   Tue May 7 15:14:47 2024 -0700
+
+    HLINKvsSDHD2
+
+commit f8c2cb6622e278778ac4416496b2ff1f06089b36
+Author: joneill <jnoneill@ucdavis.edu>
+Date:   Tue May 7 13:06:13 2024 -0700
+
+    overlay test
+
+commit 716e63170b60424ec4787a6804cb9a9fb31cd139
+Author: joneill <jnoneill@ucdavis.edu>
+Date:   Fri Apr 12 10:00:18 2024 -0700
+
+    abstracts and projects 11-23
+
+commit be508ddbc4c0db043a61d11e20ad7b2a75897dcc
+Author: joneill <jnoneill@ucdavis.edu>
+Date:   Thu Apr 11 18:46:44 2024 -0700
+
+    gpt4 temp summary labels
+
+commit 77f5351e49ab41f5039a5d889cfcf1dbb357ef6d
+Author: joneill <jnoneill@ucdavis.edu>
+Date:   Thu Apr 11 15:15:13 2024 -0700
+
+    do the waavvee
+
+commit 475e93698c03fd43416bf08274ea903434c45b90
+Author: joneill <jnoneill@ucdavis.edu>
+Date:   Fri Apr 5 17:57:15 2024 -0700
+
+    publish HLINK GHD plotly
+
+commit 7b4e9f4319523ba3d5fdf018be004f0eed1bcf8a
+Author: joneill <jnoneill@ucdavis.edu>
+Date:   Tue Jul 25 16:45:42 2023 -0700
+
+    backup attempt 6
+
+commit fdfc2364aad27b23d7eb50d825262de73dd692b6
+Author: jme <jnoneill@ucdavis.edu>
+Date:   Tue Jul 25 16:33:17 2023 -0700
+
+    undo commit mess attempt 5
+
+commit 2ae9145db1a3487af84292d9fa4bdea27fb63a2d
+Author: jme <jnoneill@ucdavis.edu>
+Date:   Tue Jul 25 16:09:47 2023 -0700
+
+    attempt fix 4.5
+
+commit fb64cd6b4f196826e84c0acbbfcd67db4e773795
+Author: jme <jnoneill@ucdavis.edu>
+Date:   Tue Jul 25 14:44:55 2023 -0700
+
+    map fix attempt3
+
+commit 84ecf8cafe69a5886d7c3f6ea9dbf6a2704414bd
+Author: joneill <jnoneill@ucdavis.edu>
+Date:   Tue Jul 25 14:34:34 2023 -0700
+
+    fix hightlights attempt3
+
+commit 814417cf9d147fe36401db803036f1b8004f954d
+Author: jimnoneill <jnoneill@ucdavis.ed>
+Date:   Fri Oct 14 16:45:23 2022 -0700
+
+    add edge highlight to Hlink map
+
+commit cc9023b6ecfd5af4d13f49046ac6e6b27f08701f
+Author: jimnoneill <jnoneill@ucdavis.ed>
+Date:   Fri Oct 14 16:11:28 2022 -0700
+
+    pastel add and new overlay color
+
+commit 202227dbe1484db6b4222ee0f37e2ecbd85f0c6e
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Fri Oct 14 09:32:19 2022 -0700
+
+    New Colors Hopefully the edges really change
+
+commit 9ad201d3ffd0534fd51b7c86333e95beed2029f0
+Merge: 118e465 cc68bab
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Thu Oct 13 15:31:26 2022 -0700
+
+    New Colors Hopefully the edges really change
+
+commit 118e4658a8ffc538d33c4445b237ccdecd243316
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Thu Oct 13 15:30:07 2022 -0700
+
+    HLinkMap
+
+commit 3c689406e411d5589779e9fddeb8b21867580356
+Author: jimnoneill <jnoneill@ucdavis.ed>
+Date:   Wed Oct 12 22:20:24 2022 -0700
+
+    hlink 30 tokens, increased filter
+
+commit 7c141633a9f167a70854c28b8e0bff2d6f32af0d
+Author: jimnoneill <jnoneill@ucdavis.ed>
+Date:   Wed Oct 12 21:28:15 2022 -0700
+
+    hd only token validation test
+
+commit b8b27b054d07d7237953948ff81e3bec8095e895
+Author: jimnoneill <jnoneill@ucdavis.ed>
+Date:   Wed Oct 12 17:42:15 2022 -0700
+
+    hlink beta network ..fix to code synstax. needs logo update.
+
+commit f1b1a82d3860dddbcfeaba2861084e3dde8ce8f5
+Author: jimnoneill <jnoneill@ucdavis.ed>
+Date:   Tue Oct 11 21:05:29 2022 -0700
+
+    hlink beta network needs logo update.
+
+commit 3679dfbc0860b2c4584847f002ea3a163be17c98
+Author: jimnoneill <jnoneill@ucdavis.ed>
+Date:   Mon Oct 10 20:11:54 2022 -0700
+
+    hlink mk2 concrete filter and redundancy collapse modules add
+
+commit a8069df1abd5d4bd459c1348dcf3d762a7226608
+Author: jimnoneill <jnoneill@ucdavis.ed>
+Date:   Mon Oct 10 15:53:04 2022 -0700
+
+    hlink mk2 concrete filter and redundancy collapse modules add
+
+commit e5811f422b939ad44a3c724b0982a2aeae7f6b3b
+Author: jimnoneill <jnoneill@ucdavis.ed>
+Date:   Tue Oct 4 19:42:12 2022 -0700
+
+    hlink beta map
+
+commit 478a705bb4d9a7a4f41a2484aba9707779d480a8
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MBP.attlocal.net>
+Date:   Mon Aug 1 14:50:16 2022 -0700
+
+    BiomedicalTechnology and Global Health Overlay no interconnections
+
+commit 28bf9db7b8cac53226ed2d3ce2c12c719e693806
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MBP.attlocal.net>
+Date:   Mon Aug 1 14:27:27 2022 -0700
+
+    BiomedicalTechnology and Global Health Overlay
+
+commit 84ff6962fee9b3f7508adf0b39005302b7b244f1
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MBP.attlocal.net>
+Date:   Mon Aug 1 13:17:28 2022 -0700
+
+    BiomedicalTechnology and Global Health Overlay
+
+commit 7981441a59787b7ffe4664edaf7791618f1a0213
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MBP.attlocal.net>
+Date:   Mon Aug 1 12:26:21 2022 -0700
+
+    BiomedicalTechnology and Global Health Overlay
+
+commit 536c0e8d08a2bbee2b29bfe2d09060f239217794
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MBP.attlocal.net>
+Date:   Mon Aug 1 10:47:10 2022 -0700
+
+    BiomedicalTechnology
+
+commit fcc786ec02f07d32b24c4a9f1fd36d3bc099c048
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MBP.attlocal.net>
+Date:   Fri Jul 29 15:48:13 2022 -0700
+
+    Global and Biomedical Technology Overlap Map
+
+commit 302f94c3812306229e9f201000ee0967afdcdcec
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Tue Jul 26 22:57:17 2022 -0700
+
+    Biomedical Technology Map
+
+commit bbcdc5a2037bbdaf2917b8edc345c3f857cb5372
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MBP.attlocal.net>
+Date:   Tue Jul 26 17:41:28 2022 -0700
+
+    Biomedical Technology Map
+
+commit 39505d653152dce214d3f8245a3a1a3f3c5305ff
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MBP.attlocal.net>
+Date:   Tue Jul 26 12:54:22 2022 -0700
+
+    San Diegoand Global Health Disparities Map
+
+commit f1eb066fe645efbfefbad4d137d98354bef053d5
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MBP.attlocal.net>
+Date:   Tue Jul 26 04:48:09 2022 -0700
+
+    San Diego Health Disparities Map
+
+commit 82277365aace395763e93507e02a8cab0e958391
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MBP.attlocal.net>
+Date:   Tue Jul 26 03:47:03 2022 -0700
+
+    San Diego Health Disparities Map
+
+commit d8758356757dbd61b3e64b91869c9646b9223e0b
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MBP.attlocal.net>
+Date:   Mon Jul 25 23:29:24 2022 -0700
+
+    Global Health Map
+
+commit 9d650e9197450b5d6d61b37eddebf2b2c6085400
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Thu Jul 21 13:34:38 2022 -0700
+
+    Biomedical Technology Map
+
+commit ea0acd0875db3e398bd58ade9be703c2b26e5a18
+Author: jimnoneill <jnoneill@ucdavis.ed>
+Date:   Fri Jul 15 11:09:37 2022 -0700
+
+    global biotech map from 5/17 tweaked for CSRC
+
+commit da80ca1357a81a132c4997af0c83e6dc3d64175b
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Fri Jul 15 04:55:11 2022 -0700
+
+    San Diego Health Map
+
+commit 1d51340733082f52ddce0a04e16035627882a50f
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Fri Jul 15 04:07:31 2022 -0700
+
+    Global Health 715
+
+commit 5019985f0f0637c10092110381421952646dfbb8
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Wed Jul 6 23:12:42 2022 -0700
+
+    San Diego Health Map playing with tokens 76
+
+commit b0001daae805ca365ff71320d9dad2a914a467dd
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Mon Jun 27 14:28:59 2022 -0700
+
+    Global Health Map 6_27 Top 50 Tokens
+
+commit 2317ea9fdef2bd85fff7235a19d14c456ecd6f83
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Mon Jun 27 12:08:37 2022 -0700
+
+    San Diego Health Map 6_27 Top 50 Tokens
+
+commit 8309db40237c2b8426039a0593a8e6d4c3dcd902
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Thu Jun 23 15:27:23 2022 -0700
+
+    San Diego Health Map 6_23
+
+commit d4da43bdefa1cf6379057c90104baf60f6741f32
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Thu Jun 23 13:34:31 2022 -0700
+
+    Global Health Map 6_23
+
+commit 194afb17829a27c41bc08c24c95069561f593b78
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Wed Jun 8 12:44:17 2022 -0700
+
+    Global Health Map 6_8 Node Recoloring
+
+commit 1dee4971092d193ff3ab7333f0d5996bcca7bc40
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Wed Jun 8 11:55:52 2022 -0700
+
+    Global Health Map 6_8 Node Recoloring
+
+commit 5d272cdf2563cd0adb7b30486c0d4cecce13d54d
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Tue Jun 7 13:02:47 2022 -0700
+
+    Global Health Map 6_7 Node Recoloring
+
+commit e0d06aab5f0bae4e4469f926c5e806e4d92826d6
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Mon Jun 6 23:11:00 2022 -0700
+
+    Global Health Map 6_6 Node Recoloring fied but not the edges
+
+commit 8098f2d5e574d31ce642eee28932e0111d3b1bab
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Mon Jun 6 22:31:40 2022 -0700
+
+    Global Health Map 6_6 Node Recoloring
+
+commit ba888900cefb6f7bcb55b7af622d40da97536716
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Mon Jun 6 22:14:51 2022 -0700
+
+    Global Health Map 6_6
+
+commit 949f0224cef124b146b22e48bd16c7d02b508c0e
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Mon Jun 6 20:39:17 2022 -0700
+
+    Global Health Map 6_6
+
+commit 7de034ed7a77729ab18958102f111dc35283258d
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Thu Jun 2 15:44:56 2022 -0700
+
+    Biomedical Technology Map
+
+commit 4c85b2aadfd6a4cf7cd20c7a12cb4d9d5f43bb34
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MBP.attlocal.net>
+Date:   Wed Jun 1 01:15:06 2022 -0700
+
+    San Diego and Global Health Disparity Map 531
+
+commit 8589b4ad3b6ff16bb237683faf816601e15a0dee
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MBP.attlocal.net>
+Date:   Wed Jun 1 00:24:54 2022 -0700
+
+    San Diego Health Disparity Map 531
+
+commit 969fc790438bf7a1a7df9c8033a7551a976dbf87
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MBP.attlocal.net>
+Date:   Tue May 31 23:50:09 2022 -0700
+
+    Global Health Disparity Map 531
+
+commit 82ecc9f4badd1085228b50349737b3d79e7ce5c6
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Fri May 27 13:28:41 2022 -0700
+
+    SDSU Health Dispariy Map
+
+commit 82db5cfb549980e0a9f58b1eda8ee8db85caa000
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Tue May 17 12:49:04 2022 -0700
+
+    Biomedical Tehnology Map 517 560 Tokens
+
+commit 327e8ca9cd089f2f1c201fe0eadfd073625141b4
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Tue May 17 11:39:13 2022 -0700
+
+    Biomedical Tehnology Map 517 60 Tokens
+
+commit 69bb710c8c725f7238e51fd43addc70ff426a1b9
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Tue May 17 09:43:52 2022 -0700
+
+    Biomedical Tehnology Map 517
+
+commit 098ede65b5120329da8e5096059814ce09a4748a
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Tue May 17 09:28:09 2022 -0700
+
+    Global Health Disparity and Biomedical Tehnology Map 517v2
+
+commit ed3768561424a3b34d026cf60a3e1539d7823453
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MBP.attlocal.net>
+Date:   Tue May 17 07:03:16 2022 -0700
+
+    San Diego Health Disparity and Global Health Disparity Map 517
+
+commit be152c1abfe6f16e91e1ab6ace524c761a073a89
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MBP.attlocal.net>
+Date:   Tue May 17 06:39:44 2022 -0700
+
+    Global Health Disparity and Biomedical Tehnology Map 517
+
+commit e062f8ff854def841253d84bd0c7ead29a052fe4
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Mon May 16 08:03:14 2022 -0700
+
+    Latest Map 516v2
+
+commit 769c83736e852ce5f0fd08a0b2eaa72644683c5d
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Mon May 16 07:59:27 2022 -0700
+
+    Latest Map 516
+
+commit 99fcfdf707d25b5f90c407295302dbf4d557954f
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MBP.attlocal.net>
+Date:   Fri May 13 02:13:50 2022 -0700
+
+    Latest Map 513
+
+commit 7b9a0cbeccea46c88971fe95861cf0fc14cbea73
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MBP.attlocal.net>
+Date:   Thu May 12 14:58:30 2022 -0700
+
+    Latest Map
+
+commit fdbace7aec371e8ac18add37189bfa16d7f50d09
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Tue Mar 15 11:30:18 2022 -0700
+
+    Updated San Diego Biomedical Technologies Map
+
+commit 1fbf3bf98d46596cab55595dc026336951a523bd
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Tue Mar 15 02:51:17 2022 -0700
+
+    Updated San Diego Health Disparities Map
+
+commit c480fe77d027b4047ffbc254d4eb76e80a14804e
+Merge: e9947d7 526275f
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Mon Mar 14 23:11:38 2022 -0700
+
+    Merge branch 'main' of https://github.com/jimnoneill/researchnetworks
+
+commit e9947d76f1030b51b9e4eaa0b5ef50efb90bded8
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MacBook-Pro.local>
+Date:   Mon Mar 14 23:09:19 2022 -0700
+
+    Updated Global Health Disparities Map
+
+commit b222735b242e1f5c6d67734c6cfd21b4d1971dca
+Author: jme <jnoneill@ucdavis.edu>
+Date:   Thu Mar 3 13:59:10 2022 -0800
+
+    SDBiomed
+
+commit 6214bab3bf7bd67401467b98e1311c75a37a3db5
+Author: jimnoneill <jnoneill@ucdavis.ed>
+Date:   Fri Feb 25 00:20:51 2022 -0800
+
+    test network with gensim
+
+commit d9af7765de7449e91e7b57d06f7e03289a866d99
+Author: jimnoneill <jnoneill@ucdavis.ed>
+Date:   Thu Feb 10 03:30:40 2022 -0800
+
+    add global health network
+
+commit db583b386c81151484c75fe40320aa6c4c0da437
+Author: Nermeeta Dhillon <nermeetadhillon@Nermeetas-MBP.attlocal.net>
+Date:   Thu Feb 3 18:04:16 2022 -0800
+
+    San Diego Health Disparity Map
+
+commit 16a8369bac431968477e160190d7e2804b4ce456
+Author: jme <jnoneill@ucdavis.edu>
+Date:   Thu Jan 20 13:32:35 2022 -0800
+
+    change name network to sdsucancer
+
+commit 6aed43b4cd1b88666fab621873ae0eb202522359
+Author: jme <jnoneill@ucdavis.edu>
+Date:   Wed Jan 19 00:35:48 2022 -0800
+
+    Add ex SDSU Cancer Network
